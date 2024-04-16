@@ -1,0 +1,60 @@
+<iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta id="ascii" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Future Studios</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            overflow: hidden;
+            background-color: black;
+            text-align: center;
+        }
+        .webgl {
+            position: fixed;
+            top: 0;
+            left: 0;
+            outline: none;
+        }
+        form {
+            font-family: 'Courier New';
+            display: block;
+            color: whitesmoke;
+            left: 0%;
+            top: 0%;
+        }
+        #kofi {
+            text-align: left;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+        input[type="button"] {
+            color: black;
+            margin: 6px;
+        }
+    </style>
+</head>
+<body onload="rotateButtonClicked()">
+    <div>
+        <input id="rotateButton" type="button" value="Rotate"> 
+        <input id="screenshotButton" type="button" value="Screenshot">
+        <script>
+            document.getElementById("screenshotButton").style.display = "none";
+            document.getElementById("rotateButton").style.display = "none";
+
+            function rotateButtonClicked() {
+                document.getElementById("rotateButton").click();
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/gh/rafatsiddiqui9/gh-test/mainscript.js">
+        </script>
+    </div>
+</body>
+</html>
+</iframe>
